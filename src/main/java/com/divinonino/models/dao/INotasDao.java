@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.divinonino.models.entities.Notas;
 
-public interface INotasDao extends CrudRepository<Notas, Integer> {
+public interface INotasDao extends CrudRepository<Notas, Long> {
 
     List<Notas> findByEstudianteCarnetAndPeriodoIdPeriodo(String carnetEstudiante, int idPeriodo);
 
